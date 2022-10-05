@@ -1,0 +1,71 @@
+#form-city-list {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#label {
+    font-weight: bold;
+}
+
+#ingrese_cuidad {
+    margin: 2px;
+    height: 2rem;
+    width: 16rem;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+#button {
+    padding: 10px 10px;
+    background-color: #00594c;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+div.alerts {
+    width: 30rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#green {
+    border-radius: 5px;
+    border: 1px solid #28a745;
+    background-color: #28a745;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+#red {
+    border-radius: 5px;
+    border: 1px solid #dc3545;
+    background-color: #dc3545;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+#yellow {
+    border-radius: 5px;
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
