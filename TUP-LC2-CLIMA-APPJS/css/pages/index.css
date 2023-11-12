@@ -1,10 +1,10 @@
 #selector {
     width: 200px;
-    padding: 7px;
+    padding: 7px;       /* Estilo del selector de la ciudad*/
     border-radius: 3px;
 }
 
-.card {
+.card {               /* Card es la clase de los hijos ques seran creados*/
     padding: 0px 16px;
     margin-top: 30px;
     border-radius: 30px;

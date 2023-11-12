@@ -1,15 +1,17 @@
 #selector {
     font-size: small;
-    padding: 10px 10px;
+    padding: 10px;
     font-weight: bolder;
 }
 
 #consultar {
-    padding: 10px 10px;
+    padding: 10px;
     color: #fff;
     background-color: #00594c;
-    border: none;
     border-radius: 10px;
+    /*
+    border: none;  CHEQUEAR ESTO
+    */
     font-weight: bold;
 }
 
@@ -26,5 +28,6 @@
     padding: 10px 10px;
     border-radius: 10px;
     border: none;
-    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.5); 
+    /*la sombra se desplaza 3 píxeles horizontalmente y 3 píxeles verticalmente, tiene un desenfoque de 6 píxeles y una expansión de 3 píxeles. El color de la sombra es un tono de gris con una opacidad del 50%  */
 }

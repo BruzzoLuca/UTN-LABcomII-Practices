@@ -1,7 +1,7 @@
 // Elementos DOM
-const addCity = document.getElementById("addCity"); // input
-const alerts = document.getElementById("alerts"); // alert
-const agregar = document.getElementById("agregarCiudad"); // Enviar
+const addCity = document.getElementById("addCity"); // Agarra el input de la ciudad ingresada
+const alerts = document.getElementById("alerts"); // Agarra el section donde se van a mostrar las alertas
+const agregar = document.getElementById("agregarCiudad"); // Boton Agregar del form
 
 // MENSAJES DE STATUS
 const messages = {
@@ -10,22 +10,22 @@ const messages = {
     cuidado: "La ciudad ingresada ya se encuentra almacenada",
 }
 
-agregar.onclick = async function() {
+agregar.onclick = async function() {       /* Cuando se pulsa el boton de Agregar Ciudad almacenado en la const linea 4 se llama a esta funcion*/
     alerts.innerHTML = loader;
 
     let cities = getCitiesFromLocalStorage();
     let newCity = addCity.value.toUpperCase();
 
     if(cities.includes(newCity)){
-        alert = "cuidado";
+        alert = "cuidado";            /* Ciudad ya ingresada -> larga una alerta*/
     }else{
         if (await consultAPI(newCity)) {
             cities.push(newCity);
-            localStorage.setItem("CITIES", JSON.stringify(cities));
+            localStorage.setItem("CITIES", JSON.stringify(cities));  /* Ciudad no ingresada -> consulta API para esa ciudad -> push al localstorage*/
             alert = "exito";
         }
         else {
-            alert = "error";
+            alert = "error";      /* Ciudad no existe en la API -> informa la situacion al usuario */
         };
     }
     mostrarAlerts(alert);

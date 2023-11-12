@@ -14,7 +14,7 @@ form {
     font-weight: bold;
 }
 
-#ingrese_cuidad {
+#ingrese_ciudad {
     margin: 2px;
     height: 2rem;
     width: 16rem;
@@ -24,7 +24,7 @@ form {
 }
 
 #button {
-    padding: 10px 10px;
+    padding: 10px;
     background-color: #00594c;
     color: #fff;
     border: none;

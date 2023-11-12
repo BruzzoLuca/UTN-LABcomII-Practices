@@ -45,7 +45,7 @@ header {
     box-shadow: 2px 2px 2px 2px #5df2d6;
 }
 
-nav > ul {
+nav > ul {                     /* Indica la disposicion de la lista no ordenada con respecto al NAV. */
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -55,7 +55,7 @@ nav li {
     flex: 0 0 auto;
 }
 
-nav li a {
+nav li a {                /* Indica el estilo de la barra de navegacion. */
     display: block;
     padding: 16px 12px;
     text-align: center;
@@ -69,7 +69,7 @@ nav li.current-page a {
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
-    /*cambio: redondea borde*/
+    /*cambio: redondea borde de los botones del NAV*/
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -104,7 +104,7 @@ h3 {
     margin: 8px 0;
 }
 
-main section {
+main section {                     /* Indica el estilo y disposicion del main (Consultar/DebeAgregarCiudad). */
     display: flex;
     justify-content: space-around;
 }

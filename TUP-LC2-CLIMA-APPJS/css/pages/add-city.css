@@ -1,4 +1,4 @@
-form {
+form {                       /* Utilización de flex para centrar el form */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -8,7 +8,7 @@ form label{
     font-size: 14px;
 }
 
-/*INPUT DONDE SE AGREGA LA CIUDAD*/
+/*INPUT DONDE SE AGREGA LA CIUDAD mediante selector de ID*/
 #addCity{
     width: 200px;
     padding: 7px;

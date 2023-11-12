@@ -25,27 +25,36 @@
             </ul>
         </nav>
     </header>
+
+
     <!-- Contenido principal de la página -->
     <main>
         <h2>Agregar Cuidad</h2>
-        <section id="form-city-list">
-        <!-- Sección donde se debe colocar el formulario, con el select y el
+        
+        <!-- Sección  del formulario, con el select y el
         botón de consultar -->
+        <section id="form-city-list">      
             <form action="">
-                <label for="ingrese_cuidad" id="label">Ingrese la cuidad a agregar:</label>
-                <input type="text" id="ingrese_cuidad" name="ingrese_ciudad">
+                
+                <label for="ingrese_ciudad" id="label">Ingrese la ciudad a agregar:</label>
+                <input type="text" id="ingrese_ciudad" name="ingrese_ciudad">
+                
                 <input type="button" value="Agregar" id="button">
+                
                 <div class="alerts">
-                    <p id="green">Cuidad agregada con éxito</p>
-                    <p id="red">Error: La cuidad ingresada no se encuentra en la Api
+                    <p id="green">Ciudad agregada con éxito</p>
+                    
+                    <p id="red">Error: La ciudad ingresada no se encuentra en la API
                             o se produjo un error al consultar
                     </p>
+                    
                     <p id="yellow">La ciudad ingresada ya se encuentra almacenada</p>
                 </div>
             </form>
         </section>
+        
         <section id="section-weather-result">
-            <!-- Sección donde se debe mostrar el clima de la ciudad -->
+            <!-- Sección donde se muestra el clima de la ciudad -->
         </section>
     </main>
     <footer>
